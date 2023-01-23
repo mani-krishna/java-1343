@@ -1,3 +1,4 @@
+1. Program to read a number from the user and print whether it is positive or negative.
 a=int(input())
 if (a<0):
     print("negative")
@@ -6,6 +7,7 @@ elif (a>0):
 elif (a==0):
     print("zero")
 
+2. Program to solve quadratic equations (use if, else if and else).
 a=float(input("enter x^2 coefficient"))
 b=float(input("enter x^1 coefficient"))
 c=float(input("enter x^0 coefficient"))
