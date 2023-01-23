@@ -1,0 +1,21 @@
+a=int(input())
+if (a<0):
+    print("negative")
+elif (a>0):
+    print("positive")
+elif (a==0):
+    print("zero")
+
+a=float(input("enter x^2 coefficient"))
+b=float(input("enter x^1 coefficient"))
+c=float(input("enter x^0 coefficient"))
+root1=((-b)+((b**2)-4*a*c))/(2*a)
+root2=((-b)-((b**2)-4*a*c))/(2*a)
+d=(b**2)-4*a*c
+if (d==0):
+    print(" roots are real and equal")
+elif (d>0):
+    print(" roots are real and unequal")
+elif(d<0):
+    print(" roots are imaginary and unequal")
+print(root1,root2)
