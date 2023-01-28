@@ -21,3 +21,37 @@ elif (d>0):
 elif(d<0):
     print(" roots are imaginary and unequal")
 print(root1,root2)
+
+
+1. Program to read a number from the user and print whether it is positive or negative.
+import java.util.Scanner;
+class positiveornegative {
+    public static void main(String[] args) {
+        Scanner pn=new Scanner(System.in);
+        System.out.println("enter a number");
+        int n=pn.nextInt();
+        if(n>0){
+            System.out.println("positve");
+        }
+        else if (n<0)
+        {
+            System.out.println("negative");
+        }
+        else
+        {
+            System.out.println("zero");
+        }
+    }
+}
+output:
+enter a number
+23
+positve
+
+enter a number
+-23
+negative
+
+enter a number
+0
+zero
