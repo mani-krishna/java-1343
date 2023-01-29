@@ -80,3 +80,27 @@ class quadraticroots {
         System.out.println(" roots are imaginary and unequal");
     }
 }
+
+
+3. Take three numbers from the user and print the greatest number.
+import java.util.Scanner;
+class greatestnumber {
+    public static void main(String[] args) {
+        Scanner r=new Scanner(System.in);
+        System.out.println("enter the value of a  :");
+        double a=r.nextInt();
+        System.out.println("enter the value of b  :");
+        double b=r.nextInt();
+        System.out.println("enter the value of c  :");
+        double c=r.nextInt();
+        if(a>=b && a>=c){
+        System.out.println("print  a is greatest :"+a);
+        }
+        else if (b>=a && b>=c){
+        System.out.println("print b is geatest :"+b);
+        }
+        else{
+        System.out.println("print c is greatest :"+c);
+        }
+    }
+}
