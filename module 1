@@ -184,6 +184,9 @@ they are same
 
 
 
+
+
+
 6. Program that takes a year from user and print whether that year is a leap year or not.
 import java.util.Scanner;
 class leapyear {
@@ -208,3 +211,35 @@ it is a leap year
 enter the year :
 2097
 it is not a leap year
+
+
+7. Program to display the first 10 natural numbers
+import java.util.Scanner;
+class naturalnumbers {
+    public static void main(String[] args) {
+        Scanner f=new Scanner(System.in);
+        System.out.println("enter the n :");
+        int n = f.nextInt();
+        int i;
+        System.out.println(n +" "+"natural numbers are");
+        for(i=1;i<n+1;i++){
+            System.out.println(i);
+        }
+    }
+}
+
+
+
+
+enter the n :10
+10 natural numbers are
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
