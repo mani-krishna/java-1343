@@ -181,3 +181,30 @@ enter the num a :2.345
 enter the num b :
 2.3456
 they are same
+
+
+
+6. Program that takes a year from user and print whether that year is a leap year or not.
+import java.util.Scanner;
+class leapyear {
+    public static void main(String[] args) {
+        Scanner f=new Scanner(System.in);
+        System.out.println("enter the year :");
+        int year = f.nextInt();
+        if(year%4==0){
+            System.out.println("it is a leap year");
+        }
+        else{
+            System.out.println("it is not a leap year");
+        }
+    }
+}
+
+
+enter the year :
+2004
+it is a leap year
+
+enter the year :
+2097
+it is not a leap year
