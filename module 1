@@ -243,3 +243,48 @@ enter the n :10
 8
 9
 10
+
+
+
+
+8. Program to input 5 numbers from keyboard and find their sum and average
+import java.util.Scanner;
+class sumandavg {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the num a :");
+        float a = s.nextFloat();
+        System.out.println("enter the num b :");
+        float b = s.nextFloat();
+        System.out.println("enter the num c :");
+        float c = s.nextFloat();
+        System.out.println("enter the num d :");
+        float d = s.nextFloat();
+        System.out.println("enter the num e :");
+        float e = s.nextFloat();
+        float sum=a+b+c+d+e;
+        float avg=sum/5;
+        System.out.println("sum and avg are"+sum+avg);
+    }
+}
+
+
+
+enter the num a :2
+enter the num b :
+3
+enter the num c :
+4
+enter the num d :5
+enter the num e :6
+sum and avg are20.04.0
+enter the num a :2
+enter the num b :
+6
+enter the num c :
+90
+enter the num d :
+87
+enter the num e :65
+sum and avg are250.050.0
+
