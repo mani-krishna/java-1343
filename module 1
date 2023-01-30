@@ -288,3 +288,48 @@ enter the num d :
 enter the num e :65
 sum and avg are250.050.0
 
+
+
+9. Program in Java to display the multiplication table of a given integer
+import java.util.Scanner;
+class table {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("enter the nth number table :");
+        int n  = s.nextInt();
+        System.out.println("enter the num of terms :");
+        int terms = s.nextInt();
+        int i;
+        for(i=1;i<terms+1;i++){
+        System.out.print(n+"*"+i+"="+n*i);
+        System.out.print("\n");
+        }
+    }
+}
+
+enter the nth number table :5
+enter the num of terms :10
+5*1=5
+5*2=10
+5*3=15
+5*4=20
+5*5=25
+5*6=30
+5*7=35
+5*8=40
+5*9=45
+5*10=50
+
+enter the nth number table :19
+enter the num of terms :
+10
+19*1=19
+19*2=38
+19*3=57
+19*4=76
+19*5=95
+19*6=114
+19*7=133
+19*8=152
+19*9=171
+19*10=190
