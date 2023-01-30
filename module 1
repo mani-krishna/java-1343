@@ -144,3 +144,40 @@ class weekdays{
         }
     }
 }
+
+
+
+5. Program that reads in two floating-point numbers and tests whether they are the same up
+to three decimal places.
+
+import java.util.Scanner;
+class floatnumbers {
+    public static void main(String[] args) {
+        Scanner f=new Scanner(System.in);
+        System.out.println("enter the num a :");
+        float a = f.nextFloat();
+        System.out.println("enter the num b :");
+        float b = f.nextFloat();
+        a=a*1000;
+        b=b*1000;
+        float c =Math.abs(a-b);
+        if (c<1){
+            System.out.println("they are same");
+        }
+        else{
+            System.out.println(" they are not same");
+        }
+    }
+}
+
+
+enter the num a :
+2.345
+enter the num b :
+2.346
+they are not same
+
+enter the num a :2.345
+enter the num b :
+2.3456
+they are same
