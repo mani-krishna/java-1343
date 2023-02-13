@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class calc {
+public class arth {
     public static void main(String args[]){
         int result;
         Scanner sc = new Scanner(System.in);
@@ -7,51 +7,33 @@ public class calc {
         int num1= sc.nextInt();
         System.out.println("Enter the second number");
         int num2= sc.nextInt();
-        
-            Calculator cal=new Calculator();
-                result=cal.Add(num1,num2);
-                System.out.println(result);
-                
-            Calculator calc=new Calculator();
-                result=calc.sub(num1,num2);
-                System.out.println(result);
-            
-            
-            Calculator b=new Calculator();
-                result=b.mul(num1,num2);
-                System.out.println(result);
-            
-          
-            Calculator ca=new Calculator();
-                result=ca.div(num1,num2);
-                System.out.println(result);
-        
-    }  
+        Arthematic ca=new Arthematic();
+        ca.Add(num1,num2);  
+        ca.sub(num1,num2);
+        ca.mul(num1,num2);
+        ca.div(num1,num2);
+    }
 }
-class Calculator
+class Arthematic
 {
-  public int Add(int num1, int num2)
+  void Add(int num1, int num2)
   {
-    System.out.println("The addition result is : ");
-    return num1 + num2;
+    System.out.println("The addition result is : "+(num1 + num2));
   }
 
-  public int sub(int num1, int num2)
+  void sub(int num1, int num2)
   {
-    System.out.println("The Subtraction result is : ");
-    return num1 - num2;
+    System.out.println("The Subtraction result is : "+(num1 - num2));
   }
 
-  public int mul(int num1, int num2)
+  void mul(int num1, int num2)
   {
-    System.out.println("The multiplication result is : ");
-    return num1 * num2;
+    System.out.println("The multiplication result is : "+(num1 * num2));
   }
 
-  public int div(int num1, int num2)
+   void div(int num1, int num2)
   {
-    System.out.println("The Division result is : ");
-    return num1 / num2;
+    System.out.println("The Division result is : "+(num1 / num2));
   }
 }
 
