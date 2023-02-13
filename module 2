@@ -1,0 +1,83 @@
+import java.util.Scanner;
+public class calc {
+    public static void main(String args[]){
+        int result;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the first number");
+        int num1= sc.nextInt();
+        System.out.println("Enter the second number");
+        int num2= sc.nextInt();
+        
+            Calculator cal=new Calculator();
+                result=cal.Add(num1,num2);
+                System.out.println(result);
+                
+            Calculator calc=new Calculator();
+                result=calc.sub(num1,num2);
+                System.out.println(result);
+            
+            
+            Calculator b=new Calculator();
+                result=b.mul(num1,num2);
+                System.out.println(result);
+            
+          
+            Calculator ca=new Calculator();
+                result=ca.div(num1,num2);
+                System.out.println(result);
+        
+    }  
+}
+class Calculator
+{
+  public int Add(int num1, int num2)
+  {
+    System.out.println("The addition result is : ");
+    return num1 + num2;
+  }
+
+  public int sub(int num1, int num2)
+  {
+    System.out.println("The Subtraction result is : ");
+    return num1 - num2;
+  }
+
+  public int mul(int num1, int num2)
+  {
+    System.out.println("The multiplication result is : ");
+    return num1 * num2;
+  }
+
+  public int div(int num1, int num2)
+  {
+    System.out.println("The Division result is : ");
+    return num1 / num2;
+  }
+}
+
+
+output:
+Enter the first number2
+Enter the second number
+3
+The addition result is : 
+5
+The Subtraction result is : 
+-1
+The multiplication result is : 
+6
+The Division result is : 
+0
+
+
+Enter the first number
+4
+Enter the second number2
+The addition result is : 
+6
+The Subtraction result is : 
+2
+The multiplication result is : 
+8
+The Division result is : 
+2
