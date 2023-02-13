@@ -63,3 +63,20 @@ The multiplication result is :
 8
 The Division result is : 
 2
+
+
+import java.util.Scanner;
+public class arth {
+    public static void main(String args[]){
+        int result,i;
+        Scanner sc = new Scanner(System.in);
+        String a= "mani";
+        for(i=0;i<a.length();i++)
+        {
+            char d = a.charAt(i);
+            int f=d+1;
+            char z= (char)f;
+            System.out.print(z);
+        }
+    }
+}
