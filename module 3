@@ -1,0 +1,24 @@
+import java.util.Scanner;
+class Stringclass {
+public static void main(String args[]) {
+ Scanner sc =new Scanner(System.in);
+ System.out.println("enter a string ");
+ String s = sc.nextLine();
+ System.out.println(" length of string is : "+s.length());
+ String[] sa= s.split(" ");
+ for(int i=0;i<3;i++)
+ {
+     System.out.println("str[" + i + "]: " +sa[i]);
+ }
+ System.out.println("character at position 2 is :"+s.charAt(2));
+
+String str[]={"mani","krishna","jaladi"};
+StringBuffer sb = new StringBuffer();
+for(int j=0; j<3; j++){
+System.out.println("str[" + j + "]: " +str[j]);
+sb.append(str[j]);
+}
+String sv = sb.toString();
+System.out.println(sv);
+}
+}
